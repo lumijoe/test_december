@@ -37,8 +37,8 @@ export default function Home() {
               height={500}
               priority
             />
-            <p className='text-sm text-white absolute top-[112px] left-[300px]'>12:12</p>
-            <div className='flex flex-row gap-0.5 absolute top-[110px] left-[350px]'>
+            <p className='text-sm text-white absolute top-[112px] left-[250px]'>12:12</p>
+            <div className='flex flex-row gap-0.5 absolute top-[110px] left-[300px]'>
               <Image
                 src="/iconCellular.svg"
                 alt="image of cellular"
@@ -59,7 +59,7 @@ export default function Home() {
                 style={{ rotate: "90deg" }}
               />
             </div>
-            <h2 className='text-4xl text-white absolute top-[182px] left-[60px]'>残高と支出入力</h2>
+            <h2 className='text-4xl text-white absolute top-[170px] left-[52px]'>残高と支出入力</h2>
 
             {/* モバイル：ヒーロー */}
             {/* <div className='absolute top-[225px] left-[36.3px]'>
@@ -74,108 +74,114 @@ export default function Home() {
             {/* コンテンツ */}
             {/* card/grid */}
       <div className="mb-32 grid text-center lg:max-w-3xl w-[500px] lg:mb-0 lg:grid-cols-2 lg:text-left absolute top-[250px] left-[50px] gap-5">
+
+        {/* コンテンツ１ */}
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[180px]" 
+          className="group rounded-lg border border-transparent  pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
           target="_blank"
           rel="noopener noreferrer"
         > 
           <Image
               src="/catHero2.jpg"
               alt="heroimage of cat"
-              width={200}
-              height={200}
+              width={165}
+              height={165}
               className='rounded-t-lg'
           />
           <div className='mx-3'>
           <h2 className={`mb-3 text-2xl`}>
-            December{' '}
+            Week 1{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0  text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-          </div>
-        </a>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  ml-[-58px] pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[180px]" 
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          <Image
-              src="/catHero2.jpg"
-              alt="heroimage of cat"
-              width={200}
-              height={200}
-              className='rounded-t-lg'
-          />
-          <div className='mx-3'>
-          <h2 className={`mb-3 text-2xl`}>
-            December{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0  text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-          </div>
-        </a>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[180px]" 
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          <Image
-              src="/catHero2.jpg"
-              alt="heroimage of cat"
-              width={200}
-              height={200}
-              className='rounded-t-lg'
-          />
-          <div className='mx-3'>
-          <h2 className={`mb-3 text-2xl`}>
-            December{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0  text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-          </div>
-        </a>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent ml-[-58px] pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[180px]" 
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          <Image
-              src="/catHero2.jpg"
-              alt="heroimage of cat"
-              width={200}
-              height={200}
-              className='rounded-t-lg'
-          />
-          <div className='mx-3'>
-          <h2 className={`mb-3 text-2xl`}>
-            December{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0  text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+            残高 ¥ 0
           </p>
           </div>
         </a>
 
-        
+        {/* コンテンツ２ */}
+        <a
+          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent  ml-[-81px] pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
+          target="_blank"
+          rel="noopener noreferrer"
+        > 
+          <Image
+              src="/catHero2.jpg"
+              alt="heroimage of cat"
+              width={165}
+              height={165}
+              className='rounded-t-lg'
+          />
+          <div className='mx-3'>
+          <h2 className={`mb-3 text-2xl`}>
+            Week2{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0  text-sm opacity-50`}>
+          残高 ¥ 100
+          </p>
+          </div>
+        </a>
+
+        {/* コンテンツ３ */}
+        <a
+          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent  pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
+          target="_blank"
+          rel="noopener noreferrer"
+        > 
+          <Image
+              src="/catHero2.jpg"
+              alt="heroimage of cat"
+              width={165}
+              height={165}
+              className='rounded-t-lg'
+          />
+          <div className='mx-3'>
+          <h2 className={`mb-3 text-2xl`}>
+            Week 3{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0  text-sm opacity-50`}>
+          残高 ¥ 3000
+          </p>
+          </div>
+        </a>
+
+        {/* コンテンツ４ */}
+        <a
+          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent ml-[-81px] pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
+          target="_blank"
+          rel="noopener noreferrer"
+        > 
+          <Image
+              src="/catHero2.jpg"
+              alt="heroimage of cat"
+              width={165}
+              height={165}
+              className='rounded-t-lg'
+          />
+          <div className='mx-3'>
+          <h2 className={`mb-3 text-2xl`}>
+            Week 4{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0  text-sm opacity-50`}>
+          残高 ¥ 820
+          </p>
+          </div>
+        </a>
       </div>
 
 
