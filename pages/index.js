@@ -31,7 +31,7 @@ export default function Home() {
           {/* モバイル：ヘッダー */}
           <div className='relative'>
             <Image
-              src="/mobile.png"
+              src="/mobile01.png" // 42kb
               alt="mobileimage"
               width={500}
               height={500}
