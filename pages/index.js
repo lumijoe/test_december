@@ -26,7 +26,7 @@ export default function Home() {
         </div>
 
         {/* モバイル */}
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center lg:static lg:h-auto lg:w-auto lg:bg-none">
 
           {/* モバイル：ヘッダー */}
           <div className='relative'>
@@ -78,7 +78,7 @@ export default function Home() {
         {/* コンテンツ１ */}
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
+          className="group rounded-lg border border-transparent  pb-4 border-gray-300 max-w-[165px] shadow-lg" 
           target="_blank"
           rel="noopener noreferrer"
         > 
@@ -91,13 +91,13 @@ export default function Home() {
           />
           <div className='mx-3'>
           <h2 className={`mb-3 text-2xl`}>
-            Week 1{' '}
+           {' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+              ¥0
             </span>
           </h2>
           <p className={`m-0  text-sm opacity-50`}>
-            残高 ¥ 0
+           1
           </p>
           </div>
         </a>
@@ -105,7 +105,7 @@ export default function Home() {
         {/* コンテンツ２ */}
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  ml-[-81px] pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
+          className="group rounded-lg border border-transparent  ml-[-81px] pb-4 border-gray-300 max-w-[165px] shadow-lg" 
           target="_blank"
           rel="noopener noreferrer"
         > 
@@ -118,13 +118,13 @@ export default function Home() {
           />
           <div className='mx-3'>
           <h2 className={`mb-3 text-2xl`}>
-            Week2{' '}
+            {' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+              ¥1200
             </span>
           </h2>
           <p className={`m-0  text-sm opacity-50`}>
-          残高 ¥ 100
+          2
           </p>
           </div>
         </a>
@@ -132,7 +132,7 @@ export default function Home() {
         {/* コンテンツ３ */}
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
+          className="group rounded-lg border border-transparent  pb-4 border-gray-300 max-w-[165px] shadow-lg"
           target="_blank"
           rel="noopener noreferrer"
         > 
@@ -145,13 +145,13 @@ export default function Home() {
           />
           <div className='mx-3'>
           <h2 className={`mb-3 text-2xl`}>
-            Week 3{' '}
+            {' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             ¥12000
             </span>
           </h2>
           <p className={`m-0  text-sm opacity-50`}>
-          残高 ¥ 3000
+          3
           </p>
           </div>
         </a>
@@ -159,7 +159,7 @@ export default function Home() {
         {/* コンテンツ４ */}
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent ml-[-81px] pb-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 max-w-[165px]" 
+          className="group rounded-lg border border-transparent ml-[-81px] pb-4 border-gray-300 max-w-[165px] shadow-lg" 
           target="_blank"
           rel="noopener noreferrer"
         > 
@@ -172,41 +172,53 @@ export default function Home() {
           />
           <div className='mx-3'>
           <h2 className={`mb-3 text-2xl`}>
-            Week 4{' '}
+            {' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+              ¥560
             </span>
           </h2>
           <p className={`m-0  text-sm opacity-50`}>
-          残高 ¥ 820
+          4
           </p>
           </div>
         </a>
-      </div> {/* card grid ここまで*/}
+      
     
 
     {/* モバイル：ボトムナビ */}
-    <div className='bg-gray-200 bg-opacity-50 w-[363px] h-[70px] rounded-b-[32px] absolute top-[765px] left-[41px]'>
-      <div className='flex flex-row justify-around h-full'>
+    <div className='bg-gray-100 bg-opacity-50 w-[363px] h-[80px] rounded-b-[32px] absolute top-[505px] left-[-9px]'>
+      <div className='flex flex-row justify-around items-center h-full'>
+        <div>
         <Image
           src="/iconMemo.svg"
           alt="image of cellular"
           width={40}
           height={40}
         />
+        <p className='text-[12px]'>入力</p>
+        </div>
+
+        <div>
         <Image
           src="/iconList.svg"
           alt="image of wifi"
           width={40}
           height={40}
         />
+        <p className='text-[12px]'>一覧</p>
+        </div>
+
+        <div>
         <Image
           src="/iconAlbum.svg"
           alt="image of electro"
           width={40}
           height={40}
         />
+        <p className='text-[12px]'>アルバム</p>
+        </div>
     </div> {/* ここまでモバイルボトムナビ  */}
+    </div> {/* card grid ここまで*/}
 
       {/*  */}
 
