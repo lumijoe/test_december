@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import NavBottom from '../components/NavBottom';
+import MobileBottom from '../components/MobileBottom';
+import MobileHeader from '../components/MobileHeader';
 
 
 import CardBox from '../components/CardBox';
@@ -24,15 +25,16 @@ export default function Home() {
             width={70}
             height={70}
             alt="image of app"
-          />
+        />
         <div>
           <code className="font-mono font-bold text-5xl ml-3">CashNyan</code>
           <p className='ml-5'>キャッシュニャン</p></div>
         </div>
 
+
+
         {/* モバイル */}
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center lg:static lg:h-auto lg:w-auto lg:bg-none">
-
           {/* モバイル：ヘッダー */}
           <div className='relative'>
             <Image
@@ -66,7 +68,23 @@ export default function Home() {
             </div>
             <h2 className='text-4xl text-white absolute top-[170px] left-[52px]'>残高と支出入力</h2>
 
-            {/* モバイル：ヒーロー */}
+            {/* CardBox */}
+            <div className="mb-32 grid text-center  w-[500px]  grid-cols-2  absolute top-[250px] left-[50px] gap-5">
+              <CardBox />
+              <MobileBottom />
+            </div> {/* card grid ここまで*/}
+          </div>
+        </div>
+      </div>
+
+    </main>
+  )
+}
+
+
+/*
+半角&nbsp;
+ モバイル：ヒーロー 
             {/* <div className='absolute top-[225px] left-[36.3px]'>
               <Image
                   src="/catHero2.jpg"
@@ -74,33 +92,6 @@ export default function Home() {
                   width={410.8}
                   height={411}
                 />
-            </div> */}
-
-      
-      {/* CardBox */}
-      <div className="mb-32 grid text-center  w-[500px]  grid-cols-2  absolute top-[250px] left-[50px] gap-5">
-        <CardBox />
-        <NavBottom />
-      </div> {/* card grid ここまで*/}
-
-
-    </div>
-
-
-
-
-
-
-
-
-      </div>
-    </div>
-
-      
-    </main>
-  )
-}
-/*
-半角&nbsp;
+            </div>
 
 */

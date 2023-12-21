@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function NavBottom() {
+export default function MobileBottom() {
     return(
         <div className='bg-white bg-opacity-90 w-[362px] h-[80px] rounded-b-[32px] absolute top-[505px] left-[-8.5px]'>
             <div className='flex flex-row justify-around items-center h-full'>
