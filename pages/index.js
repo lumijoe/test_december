@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Card from '../components/Card';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -182,11 +184,20 @@ export default function Home() {
           </p>
           </div>
         </a>
+
+        {/* コンテンツ５ */}
+        <Card
+          href="/"
+          src="/catHero2.jpg"
+          alt="cat"
+          amountBalance="1200"
+          category="5"   
+        />
       
     
 
     {/* モバイル：ボトムナビ */}
-    <div className='bg-gray-100 bg-opacity-50 w-[363px] h-[80px] rounded-b-[32px] absolute top-[505px] left-[-9px]'>
+    <div className='bg-white bg-opacity-90 w-[362px] h-[80px] rounded-b-[32px] absolute top-[505px] left-[-8.5px]'>
       <div className='flex flex-row justify-around items-center h-full'>
         <div>
         <Image
@@ -219,8 +230,6 @@ export default function Home() {
         </div>
     </div> {/* ここまでモバイルボトムナビ  */}
     </div> {/* card grid ここまで*/}
-
-      {/*  */}
 
 
     </div>
