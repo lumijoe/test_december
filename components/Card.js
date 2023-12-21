@@ -21,7 +21,7 @@ export default function Card({href, src, alt, amountBalance, category, ml}) {
                     className='rounded-t-lg'
                 />
                 <div className='mx-3'>
-                    <h2 className={`mb-3 text-2xl`}>{`¥ ${amountBalance}`}</h2>
+                    <h2 className={`mb-3 text-2xl`}>{`¥${amountBalance}`}</h2>
                     <p className={`m-0 text-sm opacity-50`}>{category}</p>
                 </div>
             </a>

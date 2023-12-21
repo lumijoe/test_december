@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import CardA from '../components/CardA';
-import Card from '../components/Card';
+import NavBottom from '../components/NavBottom';
+
+
 import CardBox from '../components/CardBox';
 
 
@@ -75,78 +76,12 @@ export default function Home() {
                 />
             </div> */}
 
-      {/* コンテンツ */}
+      
       {/* CardBox */}
       <div className="mb-32 grid text-center  w-[500px]  grid-cols-2  absolute top-[250px] left-[50px] gap-5">
-
-        {/* コンテンツ1 */}
-        <CardA />
-
-        {/* コンテンツ2 */}
-        <Card
-          href="/"
-          src="/catHero2.jpg"
-          alt="cat"
-          amountBalance="0"
-          category="1" 
-          ml="ml-[-81px]"  
-        />
-
-        {/* コンテンツ3 */}
-        <Card
-          href="/"
-          src="/catHero2.jpg"
-          alt="cat"
-          amountBalance="1200"
-          category="2"   
-        />
-
-        {/* コンテンツ4 */}
-        <Card
-          href="/"
-          src="/catHero2.jpg"
-          alt="cat"
-          amountBalance="12000"
-          category="4" 
-          ml="ml-[-81px]"  
-        />
-      
-    
-
-    {/* モバイル：ボトムナビ */}
-    <div className='bg-white bg-opacity-90 w-[362px] h-[80px] rounded-b-[32px] absolute top-[505px] left-[-8.5px]'>
-      <div className='flex flex-row justify-around items-center h-full'>
-        <div>
-        <Image
-          src="/iconMemo.svg"
-          alt="image of cellular"
-          width={40}
-          height={40}
-        />
-        <p className='text-[12px]'>入力</p>
-        </div>
-
-        <div>
-        <Image
-          src="/iconList.svg"
-          alt="image of wifi"
-          width={40}
-          height={40}
-        />
-        <p className='text-[12px]'>一覧</p>
-        </div>
-
-        <div>
-        <Image
-          src="/iconAlbum.svg"
-          alt="image of electro"
-          width={40}
-          height={40}
-        />
-        <p className='text-[12px]'>アルバム</p>
-        </div>
-    </div> {/* ここまでモバイルボトムナビ  */}
-    </div> {/* card grid ここまで*/}
+        <CardBox />
+        <NavBottom />
+      </div> {/* card grid ここまで*/}
 
 
     </div>
@@ -160,12 +95,6 @@ export default function Home() {
 
       </div>
     </div>
-
-
-
-
-
-      </div>
 
       
     </main>

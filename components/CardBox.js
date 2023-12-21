@@ -1,11 +1,18 @@
 // components/CardBox.js
 
 import React from 'react';
+import CardA from '../components/CardA';
+import CardB from '../components/CardB';
+import CardC from '../components/CardC';
+import CardD from '../components/CardD';
 
-export default function CardBox({ children }) {
+export default function CardBox() {
     return(
-        <div className="mb-32 grid text-center  w-[500px]  grid-cols-2  absolute top-[250px] left-[50px] gap-5">
-            {children}
-        </div>
+        <>
+            <CardA />
+            <CardB />
+            <CardC />
+            <CardD />
+        </>
     )
 }
