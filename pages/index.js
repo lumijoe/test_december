@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import CardA from '../components/CardA';
 import Card from '../components/Card';
+import CardBox from '../components/CardBox';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -73,125 +75,40 @@ export default function Home() {
                 />
             </div> */}
 
-            {/* コンテンツ */}
-            {/* card/grid */}
-      <div className="mb-32 grid text-center lg:max-w-3xl w-[500px] lg:mb-0 grid-cols-2 lg:text-left absolute top-[250px] left-[50px] gap-5">
+      {/* コンテンツ */}
+      {/* CardBox */}
+      <div className="mb-32 grid text-center  w-[500px]  grid-cols-2  absolute top-[250px] left-[50px] gap-5">
 
-        {/* コンテンツ１ */}
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  pb-4 border-gray-300 max-w-[165px] shadow-lg" 
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          <Image
-              src="/catHero2.jpg"
-              alt="heroimage of cat"
-              width={165}
-              height={165}
-              className='rounded-t-lg'
-          />
-          <div className='mx-3'>
-          <h2 className={`mb-3 text-2xl`}>
-           {' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              ¥0
-            </span>
-          </h2>
-          <p className={`m-0  text-sm opacity-50`}>
-           1
-          </p>
-          </div>
-        </a>
+        {/* コンテンツ1 */}
+        <CardA />
 
-        {/* コンテンツ２ */}
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  ml-[-81px] pb-4 border-gray-300 max-w-[165px] shadow-lg" 
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          <Image
-              src="/catHero2.jpg"
-              alt="heroimage of cat"
-              width={165}
-              height={165}
-              className='rounded-t-lg'
-          />
-          <div className='mx-3'>
-          <h2 className={`mb-3 text-2xl`}>
-            {' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              ¥1200
-            </span>
-          </h2>
-          <p className={`m-0  text-sm opacity-50`}>
-          2
-          </p>
-          </div>
-        </a>
+        {/* コンテンツ2 */}
+        <Card
+          href="/"
+          src="/catHero2.jpg"
+          alt="cat"
+          amountBalance="0"
+          category="1" 
+          ml="ml-[-81px]"  
+        />
 
-        {/* コンテンツ３ */}
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent  pb-4 border-gray-300 max-w-[165px] shadow-lg"
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          <Image
-              src="/catHero2.jpg"
-              alt="heroimage of cat"
-              width={165}
-              height={165}
-              className='rounded-t-lg'
-          />
-          <div className='mx-3'>
-          <h2 className={`mb-3 text-2xl`}>
-            {' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-             ¥12000
-            </span>
-          </h2>
-          <p className={`m-0  text-sm opacity-50`}>
-          3
-          </p>
-          </div>
-        </a>
-
-        {/* コンテンツ４ */}
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent ml-[-81px] pb-4 border-gray-300 max-w-[165px] shadow-lg" 
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          <Image
-              src="/catHero2.jpg"
-              alt="heroimage of cat"
-              width={165}
-              height={165}
-              className='rounded-t-lg'
-          />
-          <div className='mx-3'>
-          <h2 className={`mb-3 text-2xl`}>
-            {' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              ¥560
-            </span>
-          </h2>
-          <p className={`m-0  text-sm opacity-50`}>
-          4
-          </p>
-          </div>
-        </a>
-
-        {/* コンテンツ５ */}
+        {/* コンテンツ3 */}
         <Card
           href="/"
           src="/catHero2.jpg"
           alt="cat"
           amountBalance="1200"
-          category="5"   
+          category="2"   
+        />
+
+        {/* コンテンツ4 */}
+        <Card
+          href="/"
+          src="/catHero2.jpg"
+          alt="cat"
+          amountBalance="12000"
+          category="4" 
+          ml="ml-[-81px]"  
         />
       
     

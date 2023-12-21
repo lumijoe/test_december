@@ -3,14 +3,15 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function Card({href, src, alt, amountBalance, category}) {
+export default function Card({href, src, alt, amountBalance, category, ml}) {
     return (
         <>
             <a 
                 href={href} 
-                className='group rounded-lg border pb-4 border-gray-300 max-w-[165px] shadow-lg'
+                className={`group rounded-lg pb-4 max-w-[165px] shadow-lg ${ml}`}
                 target='_blank'
                 rel='noopener noreferrer'
+                // 右側コンテンツml-[81px]
             >   
                 <Image
                     src={src}
