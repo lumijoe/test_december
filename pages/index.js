@@ -182,13 +182,46 @@ export default function Home() {
           </p>
           </div>
         </a>
+      </div> {/* card grid ここまで*/}
+    
+
+    {/* モバイル：ボトムナビ */}
+    <div className='bg-gray-200 bg-opacity-50 w-[363px] h-[70px] rounded-b-[32px] absolute top-[765px] left-[41px]'>
+      <div className='flex flex-row justify-around h-full'>
+        <Image
+          src="/iconMemo.svg"
+          alt="image of cellular"
+          width={40}
+          height={40}
+        />
+        <Image
+          src="/iconList.svg"
+          alt="image of wifi"
+          width={40}
+          height={40}
+        />
+        <Image
+          src="/iconAlbum.svg"
+          alt="image of electro"
+          width={40}
+          height={40}
+        />
+    </div> {/* ここまでモバイルボトムナビ  */}
+
+      {/*  */}
+
+
+    </div>
+
+
+
+
+
+
+
+
       </div>
-
-
-
-
-          </div>
-        </div>
+    </div>
 
 
 
