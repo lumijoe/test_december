@@ -73,7 +73,7 @@ export default function Home() {
 
             {/* コンテンツ */}
             {/* card/grid */}
-      <div className="mb-32 grid text-center lg:max-w-3xl w-[500px] lg:mb-0 lg:grid-cols-2 lg:text-left absolute top-[250px] left-[50px] gap-5">
+      <div className="mb-32 grid text-center lg:max-w-3xl w-[500px] lg:mb-0 grid-cols-2 lg:text-left absolute top-[250px] left-[50px] gap-5">
 
         {/* コンテンツ１ */}
         <a
