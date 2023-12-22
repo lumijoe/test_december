@@ -7,6 +7,7 @@ import MobileHeader from '../components/MobileHeader';
 import CardBox from '../components/CardBox';
 import Header from '../components/Header';
 import { useState } from 'react';
+import ExampleComponent from '../components/ExampleComponent';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -45,7 +46,7 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      
+      <ExampleComponent />
       <div className="z-10 w-full items-center justify-between font-mono text-sm lg:flex">
         {/* アプリタイトル、ヘッダー */}
         <Header />
