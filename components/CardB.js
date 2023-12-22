@@ -11,7 +11,7 @@ export default function CardB() {
             src="/catHero2.jpg"
             alt="cat"
             amountBalance="12000"
-            category="2"
+            category="B銀行"
             ml="ml-[-81px]"  
             />
       </>

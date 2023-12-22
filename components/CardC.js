@@ -11,7 +11,7 @@ export default function CardC() {
             src="/catHero2.jpg"
             alt="cat"
             amountBalance="8000"
-            category="3"   
+            category="C銀行"   
             />
       </>
     )

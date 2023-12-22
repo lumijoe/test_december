@@ -11,7 +11,7 @@ export default function CardD() {
             src="/catHero2.jpg"
             alt="cat"
             amountBalance="100"
-            category="4"
+            category="D銀行"
             ml="ml-[-81px]"  
             />
       </>
