@@ -8,7 +8,7 @@ export default function CardB() {
         <>
             <Card
             href="/"
-            src="/heroCat.jpg"
+            src="/catHero.jpg"
             alt="cat"
             amountBalance="12000"
             category="B銀行"
