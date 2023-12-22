@@ -48,6 +48,7 @@ export default function Card({href, src, alt, amountBalance, amountExpenditure, 
                             value={inputValue}
                             onChange={handleInputChange}
                             placeholder='支出金額'
+                            style={{ maxWidth: "140px" }}
                         />
                         <input type='submit'/>
                     </form> 
