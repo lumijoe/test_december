@@ -1,11 +1,10 @@
 // server/app.js
 
 const express = require('express');
-const bodyParser = require('body-parser');
+const app = express();
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
-const app = express();
 const PORT = process.env.PORT || 3000;
 
 // SQLite3データベースの作成（もしくは既存のデータベースに接続）
@@ -16,12 +15,9 @@ db.serialize(() => {
   db.run("CREATE TABLE IF NOT EXISTS transactions (id INTEGER PRIMARY KEY AUTOINCREMENT, amount REAL, category TEXT, type TEXT)");
 });
 
-app.use(express.static(path.join(__dirname, '../client/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json()); // JSONパーサーを有効化
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/index.html'));
-});
 
 // データベースから取得した残高を返すエンドポイントの例
 app.get('/api/balance', (req, res) => {
