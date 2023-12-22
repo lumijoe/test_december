@@ -11,7 +11,7 @@ export default function CardA() {
             src="/heroCat.jpg"
             alt="cat"
             amountBalance="0"
-            category="A銀行"   
+            category="A銀行"
             />
       </>
     )
