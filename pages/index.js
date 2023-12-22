@@ -1,3 +1,5 @@
+// pages/index.js
+
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import MobileBottom from '../components/MobileBottom';
