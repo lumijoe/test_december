@@ -12,6 +12,33 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home() {
+
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // サーバーエンドポイントに POST リクエストを送信
+    const response = await fetch('/api/save-expenditure', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ amountExpenditure: inputValue }),
+    });
+
+    if (response.ok) {
+      console.log('Expenditure saved successfully');
+      // ここで必要ならば、他の処理を追加
+    } else {
+      console.error('Failed to save expenditure');
+    }
+  };
+
   return (
     
     <main
