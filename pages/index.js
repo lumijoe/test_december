@@ -6,6 +6,7 @@ import MobileBottom from '../components/MobileBottom';
 import MobileHeader from '../components/MobileHeader';
 import CardBox from '../components/CardBox';
 import Header from '../components/Header';
+import { useState } from 'react';
 
 
 const inter = Inter({ subsets: ['latin'] })
