@@ -5,7 +5,7 @@ const app = express();
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // SQLite3データベースの作成（もしくは既存のデータベースに接続）
 const db = new sqlite3.Database(path.join(__dirname, 'cashnyan.db'));
@@ -17,6 +17,11 @@ db.serialize(() => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json()); // JSONパーサーを有効化
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../.next/static/chunks/pages/index.js'));
+});
+
 
 
 // データベースから取得した残高を返すエンドポイントの例
