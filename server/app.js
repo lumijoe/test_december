@@ -22,9 +22,25 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../.next/static/chunks/pages/index.js'));
 });
 
+// 新しい取引を追加するエンドポイント
+app.post('/api/save-expenditure', (req, res) => {
+  const { amountExpenditure } = req.body;
 
+  if (!amountExpenditure) {
+    res.status(400).json({ error: 'Missing required field: amountExpenditure' });
+  } else {
+    db.run("INSERT INTO transactions (amount, category, type) VALUES (?, 'Expenditure', 'Expense')", [amountExpenditure], (err) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Internal Server Error' });
+      } else {
+        res.json({ message: 'Expenditure added successfully' });
+      }
+    });
+  }
+});
 
-// データベースから取得した残高を返すエンドポイントの例
+// 残高を取得するエンドポイント
 app.get('/api/balance', (req, res) => {
   db.get("SELECT SUM(amount) as balance FROM transactions", (err, row) => {
     if (err) {
@@ -34,24 +50,6 @@ app.get('/api/balance', (req, res) => {
       res.json({ balance: row ? row.balance : 0 });
     }
   });
-});
-
-// データベースへ新しい取引を追加するエンドポイントの例
-app.post('/api/transaction', (req, res) => {
-  const { amount, category, type } = req.body;
-
-  if (!amount || !category || !type) {
-    res.status(400).json({ error: 'Missing required fields' });
-  } else {
-    db.run("INSERT INTO transactions (amount, category, type) VALUES (?, ?, ?)", [amount, category, type], (err) => {
-      if (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Internal Server Error' });
-      } else {
-        res.json({ message: 'Transaction added successfully' });
-      }
-    });
-  }
 });
 
 app.listen(PORT, () => {

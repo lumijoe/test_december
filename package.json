@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "prisma generate && next build"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.5.1",
     "next": "13.5.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
